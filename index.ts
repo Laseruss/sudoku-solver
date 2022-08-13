@@ -1,23 +1,3 @@
-// Sudoku solver.
-//
-// Will need a few functions for the solver to work. 
-// Need to make it so each cell knows what row, col and subgrid they belong to. Then need to be able to check valid numbers that fulfill the row, col and subgrid functions.
-// If multiple possible numbers, store them in the cell or somewhere. Otherwise if there is only
-// one possible number fill in that cell with the number.
-//
-// Solving loop
-// go through each cell, and set numbers, if at the end of the current loop the puzzle is still unsolved
-// loop through the cells again. For future loops you will only need to check the numbers that hasnt been set and only check each cell against the possible numbers for that cell.
-//
-// The end condition is a solved puzzle.
-
-/*
-function isValidNum(puzzle) {
-
-    return validRow(row) && validCol(col) && validSubGrid(subGrid);
-}
-*/
-
 function validRow(row: number[]): number[] {
     return possibleNums(row);
 }
